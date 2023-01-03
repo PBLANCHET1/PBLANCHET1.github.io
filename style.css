@@ -7,11 +7,14 @@ and open the template in the editor.
     Created on : 22 sept. 2022, 15:08:40
     Author     : pierre.blanchet
 */
-
+ol{
+    list-style:none;
+}
 body{
     background-image:url(pictures/leMans.jpg);
     background-size: 100%;
     background-repeat:no-repeat;
+    
 }
 
 .topnav {
@@ -56,6 +59,8 @@ body{
   float: right;
 }
 
+
+
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav-right {
@@ -70,3 +75,74 @@ body{
     transform: none;
   }
 }
+.tableau{
+    display: flex;
+}
+
+table{
+    z-index: 5;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    transform: translateY(50%); /* tiré de la moitié de sa propre hauteur */
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+    
+}
+    
+
+table #blancc{
+    background-color: #e76f51;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+#customers td, #customers th {
+  border: 1px solid #e76f51;
+  padding: 8px;
+
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #e76f51;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #e76f51;
+  color: white;
+}
+
+table #orangee{
+    background-color: #e76f51;
+}
+
+table #blanc:hover{
+    background-color: #f2f2f2;
+}
+
+.video{
+    position: relative;
+    top: 180px; 
+    left: 175px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.liste{
+    width:400px;
+    position: relative;
+    top: -165px; 
+    left: 800px;
+    color:white;
+    text-shadow: 2px 2px 3px #CE5937;
+    font-size: 18px;
+}
+
+
