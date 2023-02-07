@@ -1,0 +1,105 @@
+ol{
+    list-style:none;
+}
+html { overflow-x: hidden; }
+body{
+    background-image:url(pictures/leMans.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    
+}
+
+.topnav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f4a261;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e76f51;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.contenu{
+    width: 800px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color:white;
+    text-shadow: 2px 2px 3px #CE5937;
+    font-size: 25px;
+    text-align: left;
+    margin: auto;
+    background-color: #333;    
+    padding:15px;
+}
+.contenu .titre{
+
+    background-color: #e76f51;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.contenu img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.contenu .pilote p{
+    float:left;
+    margin-left: 35px;
+}
+.contenu .pilote #sebastien,#brendon,#ryo{
+    width: 120px;
+    margin-top: -20px;
+}
