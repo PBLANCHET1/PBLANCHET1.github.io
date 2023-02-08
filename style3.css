@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 sept. 2022, 15:08:40
+    Author     : pierre.blanchet
+*/
+ol{
+    list-style:none;
+}
+html { overflow-x: hidden; }
+body{
+    background-image:url(pictures/leMans.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    
+}
+
+.topnav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f4a261;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e76f51;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #333;
+}
+.container .image{
+  width: 50%;
+  text-align: center;
+}
+
+
+.liste{
+    width:400px;
+    color:white;
+    text-shadow: 2px 2px 3px #CE5937;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: #555555;
+    padding:15px;
+}
